@@ -9,7 +9,9 @@ int main() {
    float pib1, pib2, pib3;
    int pontos1, pontos2, pontos3;
    
-   printf("Bem-vindo ao Super Trunfo Cidades!\n\n");
+   printf("===============================\n");
+   printf("   Super Trunfo Cidades!\n");
+   printf("===============================\n\n");
    
    // Cadastro da primeira cidade
    printf("=== Cadastro da Cidade 1 ===\n");
@@ -56,32 +58,39 @@ int main() {
    printf("Digite o número de pontos turísticos: ");
    scanf("%d", &pontos3);
    
-   // Exibição das cidades cadastradas
-   printf("\n=== Cidades Cadastradas ===\n");
+   // Exibição das cidades cadastradas de forma organizada
+   printf("\n===============================\n");
+   printf("    CIDADES CADASTRADAS\n");
+   printf("===============================\n");
    
-   printf("\nCidade 1:");
+   printf("\n----- CIDADE 1 -----");
    printf("\nCódigo: %s", codigo1);
    printf("\nNome: %s", nome1);
-   printf("\nPopulação: %d", populacao1);
+   printf("\nPopulação: %d habitantes", populacao1);
    printf("\nÁrea: %.2f km²", area1);
    printf("\nPIB: %.2f bilhões", pib1);
    printf("\nPontos Turísticos: %d\n", pontos1);
    
-   printf("\nCidade 2:");
+   printf("\n----- CIDADE 2 -----");
    printf("\nCódigo: %s", codigo2);
    printf("\nNome: %s", nome2);
-   printf("\nPopulação: %d", populacao2);
+   printf("\nPopulação: %d habitantes", populacao2);
    printf("\nÁrea: %.2f km²", area2);
    printf("\nPIB: %.2f bilhões", pib2);
    printf("\nPontos Turísticos: %d\n", pontos2);
    
-   printf("\nCidade 3:");
+   printf("\n----- CIDADE 3 -----");
    printf("\nCódigo: %s", codigo3);
    printf("\nNome: %s", nome3);
-   printf("\nPopulação: %d", populacao3);
+   printf("\nPopulação: %d habitantes", populacao3);
    printf("\nÁrea: %.2f km²", area3);
    printf("\nPIB: %.2f bilhões", pib3);
    printf("\nPontos Turísticos: %d\n", pontos3);
+   
+   printf("\n===============================\n");
+   printf("Pressione ENTER para sair...");
+   getchar();
+   getchar();
    
    return 0;
 }
